@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginStart="16dp"
+    android:background="@color/background"
+    app:cardCornerRadius="10dp"
+    android:id="@+id/list"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/storiesView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:background="@color/image_person"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jerryboree Keeper"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/textWhite"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/storiesView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/staus_of_life"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alive - Human"
+            android:textColor="@color/textWhite"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/status_life_bar"
+            app:layout_constraintStart_toEndOf="@+id/status_life_bar"
+            app:layout_constraintTop_toTopOf="@+id/status_life_bar" />
+
+        <TextView
+            android:id="@+id/lastKnown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last known location:"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/last_color"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/status_life_bar"
+            app:layout_constraintTop_toBottomOf="@+id/status_life_bar" />
+
+        <TextView
+            android:id="@+id/lastKnown_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earth (Replacement Dimension)"
+            android:textColor="@color/textWhite"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/lastKnown"
+            app:layout_constraintTop_toBottomOf="@+id/lastKnown" />
+
+        <TextView
+            android:id="@+id/first_see_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rest and Ricklaxation"
+            android:textColor="@color/textWhite"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/firstSee"
+            app:layout_constraintTop_toBottomOf="@+id/firstSee" />
+
+        <TextView
+            android:id="@+id/firstSee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First seen in:"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/last_color"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/lastKnown_info"
+            app:layout_constraintTop_toBottomOf="@+id/lastKnown_info" />
+
+        <ImageView
+            android:id="@+id/status_life_bar"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/status_of_life"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
